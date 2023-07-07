@@ -1,0 +1,44 @@
+.timeline__container {
+	@apply max-w-7xl mx-auto px-6 py-10 relative
+	sm:px-16 sm:py-16;
+}
+
+.timeline__wrapper {
+	@apply flex flex-col items-center justify-center;
+}
+
+.timeline__subtitle {
+	@apply mb-5 text-center text-secondary text-sm tracking-wider uppercase
+    sm:text-lg;
+}
+
+.timeline__title {
+	@apply font-black text-center text-white text-3xl
+    xs:text-4xl
+    sm:text-5xl
+    md:text-6xl;
+}
+
+.timeline__content {
+	@apply flex flex-col mt-20;
+}
+
+.timeline__element-icon {
+	@apply h-full object-contain p-2 w-full;
+}
+
+.timeline__element-title {
+	@apply font-bold text-white text-2xl;
+}
+
+.timeline__element-subtitle {
+	@apply font-semibold text-base text-secondary;
+}
+
+.timeline__element-points {
+	@apply list-disc m-5 space-y-2;
+}
+
+.timeline__element-point {
+	@apply text-sm text-white tracking-wider;
+}

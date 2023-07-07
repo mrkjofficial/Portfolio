@@ -1,0 +1,60 @@
+.contact__container {
+	@apply max-w-7xl mx-auto px-6 py-10 relative
+	sm:px-16 sm:py-16;
+}
+
+.contact__wrapper {
+	@apply flex flex-col-reverse gap-10 items-center justify-center overflow-hidden
+	lg:flex-row lg:mt-12;
+}
+
+.contact__form-box {
+	@apply bg-black-100 p-8 rounded-2xl w-full;
+}
+
+.contact__subtitle {
+	@apply mb-5 text-secondary text-sm tracking-wider uppercase
+	sm:text-lg;
+}
+
+.contact__title {
+	@apply font-black text-white text-3xl
+	xs:text-4xl
+	sm:text-5xl
+	md:text-6xl;
+}
+
+.contact__form {
+	@apply flex flex-col gap-8 mt-12;
+}
+
+.contact__form label {
+	@apply flex flex-col;
+}
+
+.contact__form span {
+	@apply font-medium mb-4 text-white;
+}
+
+.contact__form input {
+	@apply bg-tertiary border-none font-medium outline-none px-6 py-4 rounded-lg text-white
+	placeholder:text-secondary;
+}
+
+.contact__form textarea {
+	@apply bg-tertiary border-none font-medium outline-none px-6 py-4 resize-none rounded-lg text-white
+	scrollbar-thin scrollbar-thumb-rounded-lg scrollbar-thumb-secondary scrollbar-track-primary
+	placeholder:text-secondary;
+}
+
+.contact__form button {
+	@apply bg-tertiary font-bold outline-none px-8 py-3 rounded-xl shadow-md shadow-primary text-white w-fit;
+}
+
+.contact__earth-box {
+	@apply h-96 w-full
+	sm:h-192
+	md:h-256
+	lg:h-192
+	xl:h-256;
+}

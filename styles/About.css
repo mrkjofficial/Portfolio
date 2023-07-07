@@ -1,0 +1,49 @@
+.about__container {
+	@apply max-w-7xl mx-auto px-6 py-10 relative
+	sm:px-16 sm:py-16;
+}
+
+.about__wrapper {
+	@apply flex flex-col items-center justify-center;
+}
+
+.about__subtitle {
+	@apply mb-5 text-center text-secondary text-sm tracking-wider uppercase
+	sm:text-lg;
+}
+
+.about__title {
+	@apply font-black text-center text-white text-3xl
+	xs:text-4xl
+	sm:text-5xl
+	md:text-6xl;
+}
+
+.about__text {
+	@apply max-w-3xl mt-4 text-base text-secondary;
+}
+
+.about__card-group {
+	@apply flex flex-wrap gap-10 items-center justify-center mt-20;
+}
+
+.about__element-card {
+	@apply w-full
+	xs:w-64;
+}
+
+.about__element-box {
+	@apply bg-gradient-to-b from-teal-400 p-0.5 rounded-3xl shadow-card to-purple-600 w-full;
+}
+
+.about__element-service {
+	@apply bg-tertiary flex flex-col items-center justify-evenly h-72 px-12 py-5 rounded-3xl;
+}
+
+.about__element-icon {
+	@apply h-16 object-contain w-16;
+}
+
+.about__element-text {
+	@apply font-bold text-center text-white text-xl;
+}

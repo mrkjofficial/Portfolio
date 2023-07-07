@@ -1,0 +1,81 @@
+.works__container {
+	@apply max-w-7xl mx-auto px-6 py-10 relative
+	sm:px-16 sm:py-16;
+}
+
+.works__wrapper {
+	@apply flex flex-col items-center justify-center;
+}
+
+.works__subtitle {
+	@apply mb-5 text-center text-secondary text-sm tracking-wider uppercase
+    sm:text-lg;
+}
+
+.works__title {
+	@apply font-black text-center text-white text-3xl
+    xs:text-4xl
+    sm:text-5xl
+    md:text-6xl;
+}
+
+.works__text {
+	@apply max-w-3xl mt-4 text-base text-secondary;
+}
+
+.works__item {
+	@apply flex flex-wrap gap-7 items-center justify-center mt-20;
+}
+
+.works__element-card {
+	@apply bg-tertiary p-5 rounded-2xl w-full
+    md:w-80;
+}
+
+.works__element-image-box {
+	@apply aspect-video relative w-full;
+}
+
+.works__element-image {
+	@apply h-full object-cover rounded-2xl w-full;
+}
+
+.works__element-link {
+	@apply absolute bg-gradient-to-r cursor-pointer flex from-gray-600 h-8 items-center justify-center m-3 right-0 rounded-full to-black top-0 w-8;
+}
+
+.works__element-github-icon {
+	@apply h-3/4 object-contain w-3/4;
+}
+
+.works__element-title {
+	@apply font-bold text-white text-2xl;
+}
+
+.works__element-text {
+	@apply mt-2 text-secondary text-sm;
+}
+
+.works__element-tags {
+	@apply flex flex-wrap gap-2 mt-4;
+}
+
+.works__element-tag {
+	@apply text-sm;
+}
+
+.blue {
+	@apply bg-clip-text bg-gradient-to-t from-blue-600 text-transparent to-sky-400;
+}
+
+.red {
+	@apply bg-clip-text bg-gradient-to-t from-red-600 text-transparent to-pink-400;
+}
+
+.yellow {
+	@apply bg-clip-text bg-gradient-to-t from-orange-600 text-transparent to-yellow-400;
+}
+
+.green {
+	@apply bg-clip-text bg-gradient-to-t from-emerald-600 text-transparent to-green-400;
+}

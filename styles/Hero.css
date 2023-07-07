@@ -1,0 +1,52 @@
+.hero__container {
+	@apply h-screen mx-auto relative w-full;
+}
+
+.hero__wrapper {
+	@apply absolute flex gap-5 inset-0 items-start max-w-7xl mx-auto px-6 top-32
+    sm:px-16;
+}
+
+.hero__shapes {
+	@apply flex flex-col items-center justify-center mt-5;
+}
+
+.hero__circle {
+	@apply bg-violet-500 h-5 rounded-full w-5;
+}
+
+.hero__line {
+	@apply bg-gradient-to-b from-violet-500 h-40 to-gray-900/0 w-1
+    sm:h-80;
+}
+
+.hero__introduction h1 {
+	@apply font-black mt-7 text-white text-4xl
+	xs:text-5xl
+    sm:text-6xl
+    lg:text-7xl;
+}
+
+.hero__introduction span {
+	@apply bg-clip-text bg-gradient-to-br from-pink-400 text-transparent to-violet-600;
+}
+
+.hero__introduction p {
+	@apply font-medium mt-5 text-white text-base
+	xs:text-xl
+    sm:text-2xl
+    lg:text-3xl;
+}
+
+.hero__next-section-link {
+	@apply absolute bottom-32 flex items-center justify-center w-full
+	xs:bottom-10;
+}
+
+.hero__next-section-shape {
+	@apply border-secondary border-4 flex h-16 items-start justify-center p-2 rounded-3xl w-9;
+}
+
+.hero__next-section-circle {
+	@apply bg-secondary h-3 mb-1 rounded-full w-3;
+}

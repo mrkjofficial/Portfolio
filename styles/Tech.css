@@ -1,0 +1,12 @@
+.tech__container {
+	@apply max-w-7xl mx-auto px-6 py-10 relative
+	sm:px-16 sm:py-16;
+}
+
+.tech__wrapper {
+	@apply flex flex-wrap justify-center gap-10;
+}
+
+.tech__item {
+	@apply h-28 w-28;
+}
