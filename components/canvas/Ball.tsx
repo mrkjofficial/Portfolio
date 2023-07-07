@@ -2,17 +2,18 @@ import { Loader } from "../";
 import { Suspense } from "react";
 import { Canvas } from "@react-three/fiber";
 import { Decal, Float, OrbitControls, Preload, useTexture } from "@react-three/drei";
+import { StaticImageData } from "next/image";
 
 type Props = {
-	icon: string;
+	icon: StaticImageData;
 };
 
 const BallCanvas = ({ icon }: Props) => {
 	type BallProps = {
-		icon: string;
+		icon: StaticImageData;
 	};
 	const Ball = ({ icon }: BallProps) => {
-		const [decal] = useTexture([icon]);
+		const [decal] = useTexture([icon.src]);
 		return (
 			<Float floatIntensity={2} rotationIntensity={1} speed={1.75}>
 				<ambientLight intensity={0.25} />

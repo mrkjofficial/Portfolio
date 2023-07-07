@@ -2,6 +2,7 @@ import { Tilt } from "react-tilt";
 import { motion } from "framer-motion";
 import { about, services } from "../constants";
 import { staggerContainer } from "../utils/motions";
+import Image, { StaticImageData } from "next/image";
 import { fadeIn, textVariant } from "../utils/motions";
 
 const About = () => {
@@ -9,7 +10,7 @@ const About = () => {
 		index: number;
 		service: {
 			title: string;
-			icon: string;
+			icon: StaticImageData;
 		};
 	};
 	const Service = ({ index, service }: ServiceProps) => {
@@ -17,7 +18,7 @@ const About = () => {
 			<Tilt className="about__element-card">
 				<motion.div className="about__element-box" variants={fadeIn("right", "spring", index * 0.5, 0.75)}>
 					<div className="about__element-service">
-						<img alt={service.title} className="about__element-icon" src={service.icon} />
+						<Image alt={service.title} className="about__element-icon" src={service.icon} />
 						<h3 className="about__element-text">{service.title}</h3>
 					</div>
 				</motion.div>

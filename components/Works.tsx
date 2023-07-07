@@ -2,6 +2,7 @@ import { Tilt } from "react-tilt";
 import { github } from "../assets";
 import { motion } from "framer-motion";
 import { projects, works } from "../constants";
+import Image, { StaticImageData } from "next/image";
 import { fadeIn, staggerContainer, textVariant } from "../utils/motions";
 
 const Works = () => {
@@ -14,18 +15,18 @@ const Works = () => {
 				name: string;
 				color: string;
 			}[];
-			image: string;
+			image: StaticImageData;
 			source_code_link: string;
-		}
+		};
 	};
 	const Project = ({ index, project }: ProjectProps) => {
 		return (
 			<motion.div variants={fadeIn("up", "spring", index * 0.5, 0.75)}>
 				<Tilt className="works__element-card" options={{ max: 45, scale: 1, speed: 450 }}>
 					<div className="works__element-image-box">
-						<img alt="project-image" className="works__element-image" src={project.image} />
+						<Image alt="project-image" className="works__element-image" src={project.image} />
 						<div className="works__element-link" onClick={() => window.open(project.source_code_link, "_blank")}>
-							<img alt="github" className="works__element-github-icon" src={github.src} />
+							<Image alt="github" className="works__element-github-icon" src={github} />
 						</div>
 					</div>
 					<div className="mt-5">
@@ -34,7 +35,9 @@ const Works = () => {
 					</div>
 					<div className="works__element-tags">
 						{project.tags.map((tag) => (
-							<p className={`works__element-tag ${tag.color}`} key={`${project.title}-${tag.name}`}>#{tag.name}</p>
+							<p className={`works__element-tag ${tag.color}`} key={`${project.title}-${tag.name}`}>
+								#{tag.name}
+							</p>
 						))}
 					</div>
 				</Tilt>

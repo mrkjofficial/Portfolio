@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import { logo } from "../assets";
 import { navLinks } from "../constants";
 import { useEffect, useState } from "react";
@@ -27,7 +28,7 @@ const Navbar = () => {
 					}}
 					href="/"
 				>
-					<img alt="logo" className="navbar__logo-icon" src={logo.src} />
+					<Image alt="logo" className="navbar__logo-icon" src={logo} />
 					<p className="navbar__logo-text">MRKJOFFICIAL</p>
 				</Link>
 				<ul className="navbar__nav-links">

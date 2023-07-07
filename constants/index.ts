@@ -50,19 +50,19 @@ const about =
 const services = [
 	{
 		title: "Web Developer",
-		icon: web.src,
+		icon: web,
 	},
 	{
 		title: "React Native Developer",
-		icon: mobile.src,
+		icon: mobile,
 	},
 	{
 		title: "Backend Developer",
-		icon: backend.src,
+		icon: backend,
 	},
 	{
 		title: "Content Creator",
-		icon: creator.src,
+		icon: creator,
 	},
 ];
 
@@ -70,7 +70,7 @@ const experiences = [
 	{
 		title: "Bachelor of Computer Application",
 		organization: "Siliguri Institute of Technology",
-		icon: siliguriInstituteOfTechnology.src,
+		icon: siliguriInstituteOfTechnology,
 		background: "#fff",
 		date: "June 2015 - May 2018",
 		points: [
@@ -82,7 +82,7 @@ const experiences = [
 	{
 		title: "Master of Computer Application",
 		organization: "Pondicherry University",
-		icon: pondicherryUniversity.src,
+		icon: pondicherryUniversity,
 		background: "#fff",
 		date: "October 2021 - May 2023",
 		points: [
@@ -94,7 +94,7 @@ const experiences = [
 	{
 		title: "Web Developer Intern",
 		organization: "Enterprise Minds Inc",
-		icon: enterpriseMinds.src,
+		icon: enterpriseMinds,
 		background: "#fff",
 		date: "Jan 2023 - April 2023",
 		points: [
@@ -108,55 +108,55 @@ const experiences = [
 const techs = [
 	{
 		name: "HTML 5",
-		icon: html.src,
+		icon: html,
 	},
 	{
 		name: "CSS 3",
-		icon: css.src,
+		icon: css,
 	},
 	{
 		name: "JavaScript",
-		icon: javascript.src,
+		icon: javascript,
 	},
 	{
 		name: "TypeScript",
-		icon: typescript.src,
+		icon: typescript,
 	},
 	{
 		name: "React JS",
-		icon: reactjs.src,
+		icon: reactjs,
 	},
 	{
 		name: "Redux Toolkit",
-		icon: redux.src,
+		icon: redux,
 	},
 	{
 		name: "Tailwind CSS",
-		icon: tailwind.src,
+		icon: tailwind,
 	},
 	{
 		name: "Node JS",
-		icon: nodejs.src,
+		icon: nodejs,
 	},
 	{
 		name: "MongoDB",
-		icon: mongodb.src,
+		icon: mongodb,
 	},
 	{
 		name: "Three JS",
-		icon: threejs.src,
+		icon: threejs,
 	},
 	{
 		name: "git",
-		icon: git.src,
+		icon: git,
 	},
 	{
 		name: "figma",
-		icon: figma.src,
+		icon: figma,
 	},
 	{
 		name: "docker",
-		icon: docker.src,
+		icon: docker,
 	},
 ];
 
@@ -186,7 +186,7 @@ const projects = [
 				color: "green",
 			},
 		],
-		image: advancegpt.src,
+		image: advancegpt,
 		source_code_link: "https://github.com/mrkjofficial/AdvanceGPT",
 	},
 	{
@@ -211,7 +211,7 @@ const projects = [
 				color: "green",
 			},
 		],
-		image: aura.src,
+		image: aura,
 		source_code_link: "https://github.com/mrkjofficial/Aura",
 	},
 ];

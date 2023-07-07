@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import { experiences } from "../constants";
+import Image, { StaticImageData } from "next/image";
 import "react-vertical-timeline-component/style.min.css";
 import { staggerContainer, textVariant } from "../utils/motions";
 import { VerticalTimeline, VerticalTimelineElement } from "react-vertical-timeline-component";
@@ -9,7 +10,7 @@ const Timeline = () => {
 		experience: {
 			title: string;
 			organization: string;
-			icon: string;
+			icon: StaticImageData;
 			background: string;
 			date: string;
 			points: string[];
@@ -25,7 +26,7 @@ const Timeline = () => {
 			)
 		}
 		return (
-			<VerticalTimelineElement contentArrowStyle={{ borderRight: "7px solid  #232631" }} contentStyle={{ background: "#1d1836", color: "#fff" }} date={experience.date} icon={<img alt={experience.organization} className="timeline__element-icon" src={experience.icon} />} iconStyle={{ background: experience.background }}>
+			<VerticalTimelineElement contentArrowStyle={{ borderRight: "7px solid  #232631" }} contentStyle={{ background: "#1d1836", color: "#fff" }} date={experience.date} icon={<Image alt={experience.organization} className="timeline__element-icon" src={experience.icon} />} iconStyle={{ background: experience.background }}>
 				<div>
 					<h3 className="timeline__element-title">{experience.title}</h3>
 					<p className="timeline__element-subtitle">{experience.organization}</p>
