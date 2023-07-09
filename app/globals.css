@@ -1,6 +1,7 @@
 @import "tailwindcss/base";
 @import "tailwindcss/components";
 @import "tailwindcss/utilities";
+@import "../styles/App.css";
 @import "../styles/About.css";
 @import "../styles/Contact.css";
 @import "../styles/Hero.css";
@@ -9,23 +10,3 @@
 @import "../styles/Tech.css";
 @import "../styles/Timeline.css";
 @import "../styles/Works.css";
-
-* {
-	@apply box-border font-poppins m-0 p-0 scroll-smooth;
-}
-
-.app__container {
-	@apply bg-primary relative;
-}
-
-.app__wrapper {
-	@apply bg-center bg-cover bg-no-repeat bg-pattern;
-}
-
-.app__contact-box {
-	@apply relative;
-}
-
-.app__stars-box {
-	@apply absolute h-auto inset-0 w-full;
-}

@@ -1,9 +1,9 @@
 import { Tilt } from "react-tilt";
-import { github } from "../assets";
+import { github } from "@assets";
 import { motion } from "framer-motion";
-import { projects, works } from "../constants";
+import { projects, works } from "@constants";
 import Image, { StaticImageData } from "next/image";
-import { fadeIn, staggerContainer, textVariant } from "../utils/motions";
+import { fadeIn, staggerContainer, textVariant } from "@utils/motions";
 
 const Works = () => {
 	type ProjectProps = {

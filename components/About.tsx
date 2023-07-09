@@ -1,9 +1,8 @@
 import { Tilt } from "react-tilt";
 import { motion } from "framer-motion";
-import { about, services } from "../constants";
-import { staggerContainer } from "../utils/motions";
+import { about, services } from "@constants";
 import Image, { StaticImageData } from "next/image";
-import { fadeIn, textVariant } from "../utils/motions";
+import { fadeIn, staggerContainer, textVariant } from "@utils/motions";
 
 const About = () => {
 	type ServiceProps = {

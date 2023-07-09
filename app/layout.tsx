@@ -9,10 +9,16 @@ export const metadata: Metadata = {
 	description: "Personal Portfolio of Karan Jaiswal",
 };
 
-export default function RootLayout({ children }: { children: React.ReactNode }) {
+type Props = {
+	children: React.ReactNode;
+};
+
+const RootLayout = ({ children }: Props) => {
 	return (
 		<html lang="en">
 			<body className={poppins.className}>{children}</body>
 		</html>
 	);
-}
+};
+
+export default RootLayout;

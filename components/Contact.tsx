@@ -2,10 +2,10 @@
 import emailjs from "@emailjs/browser";
 import { motion } from "framer-motion";
 import { toast } from "react-toastify";
-import { EarthCanvas } from "./canvas/";
+import { EarthCanvas } from "./canvas";
 import { useRef, useState } from "react";
 import 'react-toastify/dist/ReactToastify.css';
-import { slideIn, staggerContainer } from "../utils/motions";
+import { slideIn, staggerContainer } from "@utils/motions";
 
 const Contact = () => {
 	const serviceId = process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID!;

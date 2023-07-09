@@ -1,7 +1,7 @@
 "use client"
 import { ToastContainer } from "react-toastify";
-import { StarsCanvas } from "../components/canvas";
-import { About, Contact, Hero, Navbar, Tech, Timeline, Works } from "../components";
+import { StarsCanvas } from "@components/canvas";
+import { About, Contact, Hero, Navbar, Tech, Timeline, Works } from "@components";
 
 const App = () => {
 	return (

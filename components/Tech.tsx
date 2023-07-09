@@ -1,7 +1,7 @@
-import { techs } from "../constants";
+import { techs } from "@constants";
 import { BallCanvas } from "./canvas/";
 import { motion } from "framer-motion";
-import { staggerContainer } from "../utils/motions";
+import { staggerContainer } from "@utils/motions";
 
 const Tech = () => {
 	return (

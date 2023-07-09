@@ -21,7 +21,7 @@ import {
 	threejs,
 	advancegpt,
 	aura,
-} from "../assets";
+} from "@assets";
 
 const navLinks = [
 	{
@@ -166,8 +166,7 @@ const works =
 const projects = [
 	{
 		title: "AdvanceGPT",
-		description:
-			"Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+		description: "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
 		tags: [
 			{
 				name: "firebase",
@@ -191,8 +190,7 @@ const projects = [
 	},
 	{
 		title: "Aura",
-		description:
-			"Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
+		description: "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
 		tags: [
 			{
 				name: "nodejs",

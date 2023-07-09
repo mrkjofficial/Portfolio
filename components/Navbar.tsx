@@ -1,7 +1,7 @@
 import Link from "next/link";
 import Image from "next/image";
-import { logo } from "../assets";
-import { navLinks } from "../constants";
+import { logo } from "@assets";
+import { navLinks } from "@constants";
 import { useEffect, useState } from "react";
 import { CloseOutlined, MenuOutlined } from "@ant-design/icons";
 

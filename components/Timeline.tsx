@@ -1,8 +1,8 @@
 import { motion } from "framer-motion";
-import { experiences } from "../constants";
+import { experiences } from "@constants";
 import Image, { StaticImageData } from "next/image";
 import "react-vertical-timeline-component/style.min.css";
-import { staggerContainer, textVariant } from "../utils/motions";
+import { staggerContainer, textVariant } from "@utils/motions";
 import { VerticalTimeline, VerticalTimelineElement } from "react-vertical-timeline-component";
 
 const Timeline = () => {

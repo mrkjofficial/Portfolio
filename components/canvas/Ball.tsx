@@ -1,5 +1,5 @@
-import { Loader } from "../";
 import { Suspense } from "react";
+import { Loader } from "@components";
 import { Canvas } from "@react-three/fiber";
 import { Decal, Float, OrbitControls, Preload, useTexture } from "@react-three/drei";
 import { StaticImageData } from "next/image";

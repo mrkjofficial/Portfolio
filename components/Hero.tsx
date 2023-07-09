@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import { DesktopCanvas } from "./canvas/";
-import { introduction } from "../constants";
+import { introduction } from "@constants";
 
 const Hero = () => {
 	return (
