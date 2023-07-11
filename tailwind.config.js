@@ -8,7 +8,7 @@ module.exports = {
 				"spin-slow": "spin 3s linear infinite",
 			},
 			backgroundImage: {
-				pattern: "url('/background.jpg')",
+				pattern: "url('/background.webp')",
 			},
 			boxShadow: {
 				card: "0px 35px 120px -15px #211e35",
